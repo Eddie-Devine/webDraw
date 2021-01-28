@@ -1,0 +1,165 @@
+body{
+
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+}
+
+#downloadDrawingPrompt{
+
+  z-index: 10;
+  position: absolute;
+  top: 650px;
+  left: 50px;
+
+}
+
+#downloadButton{
+
+  z-index: 10;
+  position: absolute;
+  top: 10px;
+  left: 1250px;
+
+  background: gray;
+  border: solid black;
+  border-radius: 15px;
+  width: 5%;
+  height: 10%;
+
+  cursor: pointer;
+
+}
+
+#downloadIcon{
+
+  width: 100%;
+  height: 100%;
+
+}
+
+canvas{
+
+  margin-left: 17%;
+  user-select: none;
+
+}
+
+#earaser{
+
+  width: 10%;
+  border: solid black;
+  cursor: pointer;
+  background: gray;
+
+}
+
+#selector{
+
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+#tb{
+
+  border: 1px solid #4e7bb1;
+  user-select: none;
+  width: 48px;
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+}
+
+#devDiv{
+
+  z-index: 6;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  visibility: visible;
+  user-select: none;
+
+}
+
+h2{
+
+  display: inline;
+  font-size: 24px;
+
+}
+
+.devMicroDiv{
+
+  margin-bottom: 15px;
+
+}
+
+#imageSelectorPrompt{
+
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+
+}
+
+
+
+#imageSelectorBody{
+
+  position: absolute;
+  top: 30px;
+  left: 570px;
+
+  visibility: hidden;
+
+  width: 350px;
+  height: 200px;
+  background:blueviolet;
+  border: solid gray 10px;
+  border-radius: 30px;
+  z-index: 7;
+
+}
+#header{
+
+  text-align: center;
+
+}
+#imgTb{
+
+  margin-right: 5px;
+  height: 30px;
+  width: 97.1%;
+  font-size: 30px;
+  border-width: 5px;
+
+}
+#buttonDiv{
+
+  background: lightblue;
+  border: solid black 5px;
+  border-radius: 15px;
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 5px;
+  user-select: none;
+
+}
+#buttonDiv:hover{
+
+  background: blue;
+  cursor: pointer;
+
+}
+#buttonHeader{
+
+  text-align: center;
+
+}

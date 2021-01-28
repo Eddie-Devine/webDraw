@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id = "bod">
+
+    <canvas id = "canvas" width = "1000px" height = "700px"></canvas>
+
+    <input type = "color" id = "selector" value = "#FF0000"></input>
+
+    <img id="eraser" width = "0px" height = "0px" src="./images/eraser.png" onclick="eraser()">
+
+    <img id="trash" width = "0px" height = "0px" src="./images/trash.png" onclick="trash()">
+
+    <img id="line" width = "0px" height = "0px" src="./images/line.png">
+
+    <img id="rectangle" width="0px" height="0px" src="./images/rect.jpg">
+
+    <img id="circle" width="0px" height="0px" src="./images/circle.png">
+
+    <img id="rainbow" width="0px" height="0px" src="./images/rainbow.png">
+
+    <img id="image" width="0px" height="0px" src="./images/default_image.png">
+
+    <input type = "text" id = "tb" autocomplete="off" placeholder="Custom"></input>
+
+    <button id="imageSelectorPrompt" onclick="promptImageSelector()">Image</button>
+    
+    <div id="devDiv">
+
+      <div id="canvasMouseXDiv" class="devMicroDiv">
+        <h2 id="canvasMouseXLabel">CanvasX:</h2>
+        <h2 id="canvasX">0</h1>
+      </div>
+      
+      <div id="canvasMouseYDiv" class="devMicroDiv">
+        <h2 id="canvasMouseYLabel">CanvasY:</h2>
+        <h2 id="canvasY">0</h1>
+      </div>
+
+      <div id="mouseXDiv" class="devMicroDiv">
+        <h2 id="mouseXLabel">MouseX:</h2>
+        <h2 id="mouseX">0</h1>
+      </div>
+
+      <div id="mouseYDiv" class="devMicroDiv">
+        <h2 id="mouseYLabel">MouseY:</h2>
+        <h2 id="mouseY">0</h1>
+      </div>
+
+      <div id="mouseDownDiv" class="devMicroDiv">
+        <h2 id="mouseDownLabel">MouseDown:</h2>
+        <h2 id="mouseDown">false</h1>
+      </div>
+
+      <div id="mouseButtonDiv" class="devMicroDiv">
+        <h2 id="mouseButtonLabel">MouseButton:</h2>
+        <h2 id="mouseButton">0</h1>
+      </div>
+
+      <div id="keyDownDiv" class="devMicroDiv">
+        <h2 id="keyDownLabel">KeyDown:</h2>
+        <h2 id="keyDown">none</h1>
+      </div>
+
+      <div id="SelectedDiv" class="devMicroDiv">
+        <h2 id="selectedLabel">Selected:</h2>
+        <h2 id="selected">none</h1>
+      </div>
+
+      <div id="brushSizeDiv" class="devMicroDiv">
+        <h2 id="brushSizeLabel">BrushSize:</h2>
+        <h2 id="brushSize">10</h2>
+      </div>
+
+      <div id="brushColorDiv" class="devMicroDiv">
+        <h2 id="brushColorLabel">BrushColor:</h2>
+        <h2 id="brushColor">red</h1>
+      </div>
+
+      <div id="displayHueDiv" class="devMicroDiv">
+        <h2 id="displayHueLabel">DisplayHue:</h2>
+        <h2 id="displayHue">false</h1>
+      </div>
+
+      <div id="fillDiv" class="devMicroDiv">
+        <h2 id="fillLabel">fill:</h2>
+        <h2 id="fill">false</h1>
+      </div>
+
+      <div id="prevColorDiv" class="devMicroDiv">
+        <h2 id="prevColorLabel">PreviousColor:</h2>
+        <h2 id="prevColor">red</h1>
+      </div>
+
+      <div id="imageSelectorStatusDiv" class="devMicroDiv">
+        <h2 id="imageSelectorStatusLabel">SelectorStatus:</h2>
+        <h2 id="imageSelectorStatus">hidden</h1>
+      </div>
+
+      <div id="imageDiv" class="devMicroDiv">
+        <h2 id="imageLabel">Image:</h2>
+        <a id="link" href=""><h2 id="image">Link</h2></a>
+      </div>
+      
+    </div>
+
+    <div id="imageSelectorBody">
+
+      <h1 id="header">Paste Image Address:</h1>
+      <input id="imgTb" type="text" autocomplete="off">
+
+      <div id="buttonDiv" onclick="selectImage()";>
+        <h2 id="buttonHeader">Submit</h1>
+      </div>
+
+    </div>
+
+    <a id="downloadButton" href = "" download = "myCanvas.png" onclick = "downloadDrawing()">
+      <img id="downloadIcon" src="./images/downloadIcon.png">
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
